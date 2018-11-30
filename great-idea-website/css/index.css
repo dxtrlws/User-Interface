@@ -66,45 +66,106 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 .container {
-	margin: 0 auto;
+	margin: 20px auto;
 	width: 876px;
 	padding-top: 20px;
 }
 
+/* Navigation */
 nav {
 	margin-bottom: 40px;
+	position: relative;
 }
 
 nav a {
 	text-decoration: none;
 	color: darkgray;
 	margin-right: 50px;
+	margin-top: 15px;
+	
 }
 
 nav a:hover {
 	color: black;
 }
 
-nav img {
-	margin-left: 20px;
+.logo{
+	position: absolute;
+	top: -15px;
+	right: 0;
 }
+
+/* Header */
 
 header {
 	margin-bottom: 40px;
+	position: relative;
 }
 
 .hero {
 	display: inline-block;
-	width: 250px;
-	text-align: center;	
+	width: 49%;
+	margin-top: 35px;
+	margin-bottom: 20px;
 }
 
-.hero-img {
-	display:inline-block;
-	width: 379x;
-	padding-left: 200px;
-	padding-top: 100px;
+.hero h1 {
+	font-size: 82px;
+	text-align: center;
+	position: absolute;
+	top: 65px;
+	left: 50px;
 }
+
+.hero img {
+	padding-left: 50px;
+}
+
+.button {
+	position: absolute;
+	left: 220px;
+	top: 385px;
+	transform: translate(-50%, -50%);
+}
+
+.btn {
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+	display: block;
+	border: 2px solid black;
+	text-transform: uppercase;
+	padding: 14px 60px;
+	overflow: hidden;
+	transition:  1s all ease;
+}
+
+.btn:hover {
+	color: white;
+}
+
+.btn::before {
+	background: black;
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	transition: all 0.6s ease;
+}
+
+.btn1::before {
+	width: 0;
+	height: 100%;
+}
+.btn:hover::before{
+	width: 100%;
+}
+
+/* Top content */
 
 .top-content {
 	width: 49%;
@@ -112,6 +173,8 @@ header {
 	margin-bottom: 40px;
 	margin-top: 40px;
 }
+
+/* Bottom content */
 
 .bottom-content {
 	display: inline-block;
@@ -129,10 +192,7 @@ footer {
 	margin-bottom: 50px;
 }
 
-h1 {
-	font-size: 72px;
-}
-
+/* Utilities */
 p {
 	margin-top: 1em;
     margin-bottom: 1em;
@@ -140,11 +200,3 @@ p {
     margin-right: 0;
 }
 
-.button {
-	width: 200px;
-	height: 30px;
-	padding-top: 4px;
-	/* margin-left: 103px; */
-	border: 1px solid black;
-	cursor: pointer;
-}
