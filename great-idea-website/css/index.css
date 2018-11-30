@@ -54,11 +54,11 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
@@ -123,7 +123,7 @@ header {
 
 .button {
 	position: absolute;
-	left: 220px;
+	left: 250px;
 	top: 385px;
 	transform: translate(-50%, -50%);
 }
